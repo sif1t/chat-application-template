@@ -1,6 +1,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
+const path = require("path");
 
 const app = express();
 dotenv.config();
@@ -23,3 +24,4 @@ app.use(express.urlencoded({ extended: true}));
 app.use("view engine", "ejs");
 
 //set static folder
+app.use(express.static(path.join(__dirname, "public")));
