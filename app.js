@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const path = require("path");
+const cookieParser = require("cookie-parser");
 
 const app = express();
 dotenv.config();
@@ -25,3 +26,6 @@ app.use("view engine", "ejs");
 
 //set static folder
 app.use(express.static(path.join(__dirname, "public")));
+
+//parse cookies
+app.use(cookieParser(process.env.COOKIE_SECRET));
