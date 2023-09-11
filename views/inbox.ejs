@@ -1,19 +1,38 @@
-<%- include('./partials/header.ejs'); %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="sifat" />
+    <meta name="owner" content="AS (coder)" />
+    <title><%= title %></title>
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./stylesheets/toastify.css" />
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <script src="./js/toastify.js"></script>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="menu-item"><a href="/inbox">Inbox</a></div>
+      <div class="menu-item"><a href="/users">Users</a></div>
+      <div class="menu-item"><a href="/">Login</a></div>
+    </div>
     <div id="chat-container">
       <div id="search-container">
         <input type="text" placeholder="Search" />
       </div>
       <div id="conversation-list">
         <div class="conversation active">
-          <img src="./images/user1.png" alt="Sumit" />
-          <div class="title-text">Sumit Saha</div>
-          <di class="created-date"> Apr 16 </di>
+          <img src="./images/user1.png" alt="sifat" />
+          <div class="title-text">Arifeen Sifat</div>
+          <di class="created-date"> Nov 10 </di>
           <div class="conversation-message">This is a message</div>
         </div>
         <div class="conversation">
           <img src="./images/user2.png" alt="Sumit" />
-          <div class="title-text">Sumit Saha</div>
-          <di class="created-date"> Apr 16 </di>
+          <div class="title-text">Arifeen Sifat</div>
+          <di class="created-date"> Nov 10 </di>
           <div class="conversation-message">This is a message</div>
         </div>
       </div>
@@ -21,7 +40,7 @@
         <a href="#">+</a>
       </div>
       <div id="chat-title">
-        <span>Sumit</span>
+        <span>SIFAT</span>
         <img src="./images/trash.png" alt="Delete Conversation" />
       </div>
       <div id="chat-message-list">
@@ -29,7 +48,7 @@
           <div class="message-content">
             <img src="./images/user1.png" alt="Sumit" />
             <div class="message-text">Ok then</div>
-            <div class="message-time">Apr 16</div>
+            <div class="message-time">Nov 10</div>
           </div>
         </div>
         <div class="message-row you-message">
@@ -55,7 +74,7 @@
           <form>
             <input type="text" placeholder="Name" />
             <input type="text" placeholder="Username" />
-            <input type="button" value="Submit" />
+            <input type="button" value="sifat" />
           </form>
         </div>
       </div>

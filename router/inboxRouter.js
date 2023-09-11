@@ -11,4 +11,4 @@ const router =  express.Router();
 // inbox page
 router.get("/", getInbox);
 
-module.exports = router;
+module.exports = router; 

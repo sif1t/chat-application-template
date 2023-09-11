@@ -9,6 +9,6 @@ const router =  express.Router();
 
 
 // login page
-router.get("/", getLogin);
+router.get("/", decorateHtmlResponse("Login"),getLogin);
 
 module.exports = router;
